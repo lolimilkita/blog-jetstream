@@ -10,12 +10,12 @@ My Learning project creat a blog with Lavarel 9, Jetstream and Livewire :mechani
 
 :memo: TODO LIST :memo:
 
-1. Create Models and Migrations. [x]
+1. [x] Create Models and Migrations.
     - post
     - category
     - tag
-2. Create relationships between Models. [x]
-3. Create methods in Models. [x]
+2. [x] Create relationships between Models.
+3. [x] Create methods in Models.
 
 #### Episode 2
 
