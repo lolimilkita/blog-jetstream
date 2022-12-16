@@ -13,11 +13,21 @@ class Post extends Model
 
     protected $table = 'posts';
 
-    protected $fillable = ['id', 'title', 'body'];
+    protected $fillable = [
+        'cover_image',
+        'title',
+        'slug',
+        'body',
+        'meta_description',
+        'published_at',
+        'featured',
+        'author_id',
+        'category_id'
+    ];
 
     public function user(): BelongsTo
     {
-        return $this->belongsTo(User::class)->withDefault('Admin User');
+        return $this->belongsTo(User::class, 'author_id')->withDefault('Admin User');
     }
 
     public function category(): BelongsTo

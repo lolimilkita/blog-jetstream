@@ -2,19 +2,29 @@
 
 ## Create a blog with Laravel 9, Jetstream and Livewire
 
-My Learning project creat a blog with Lavarel 9, Jetstream and Livewire :mechanical_arm:.
-In this Project i will PR in every episode that shown the TODO LIST below! :point_down: :eyes:
+My Learning project creat a blog with Lavarel 9, Jetstream and Livewire :mechanical_arm:. In this Project i will PR in every episode that shown the TODO LIST below! :point_down: :eyes:
 
 #### Episode 1
 
+[PR for this episode](https://github.com/lolimilkita/blog-jetstream/pull/1)
+
 :memo: TODO LIST :memo:
 
-1. Create Models and Migrations :ballot_box_with_check:
+1. [x]  1. Create Models and Migrations.
     - post
     - category
     - tag
-2. Create relationships between Models :ballot_box_with_check:
-3. Create methods in Models :ballot_box_with_check:
+2. [x]  2. Create relationships between Models.
+3. [x]  3. Create methods in Models.
+
+#### Episode 2
+
+:memo: TODO LIST :memo:
+
+1. [x]  1. Add Subscriber Model and migration for newsletter subscription.
+2. [x]  2. Create migration schema for all migrations (posts, categories, subscribers).
+3. [x]  3. Allow Sub Categories.
+4. [x]  4. Complete fillable mass assignments in models.
 
 ## License
 
