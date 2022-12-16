@@ -39,7 +39,7 @@ My Learning project creat a blog with Lavarel 9, Jetstream and Livewire :mechani
         - footer
         - nav
         - alerts
-3. [ ]  3. Complete fillable mass assignments in models.
+3. [x]  3. Complete fillable mass assignments in models.
     - add meta tags for social
         - facebook
 
