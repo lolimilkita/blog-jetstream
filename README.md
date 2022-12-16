@@ -19,12 +19,29 @@ My Learning project creat a blog with Lavarel 9, Jetstream and Livewire :mechani
 
 #### Episode 2
 
+[PR for this episode](https://github.com/lolimilkita/blog-jetstream/pull/2)
+
 :memo: TODO LIST :memo:
 
 1. [x]  1. Add Subscriber Model and migration for newsletter subscription.
 2. [x]  2. Create migration schema for all migrations (posts, categories, subscribers).
 3. [x]  3. Allow Sub Categories.
 4. [x]  4. Complete fillable mass assignments in models.
+
+#### Episode 3
+
+:memo: TODO LIST :memo:
+
+1. [x]  1. Create HomeController with View and Route.
+2. [x]  2. Create a base layout component.
+    - partials components
+        - head
+        - footer
+        - nav
+        - alerts
+3. [x]  3. Complete fillable mass assignments in models.
+    - add meta tags for social
+        - facebook
 
 ## License
 
