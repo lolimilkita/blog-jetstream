@@ -21,11 +21,11 @@ My Learning project creat a blog with Lavarel 9, Jetstream and Livewire :mechani
 
 :memo: TODO LIST :memo:
 
-1. Add Subscriber Model and migration for newsletter subscription. [ ]
-2. Create migration schema for all migrations. [ ]
-3. Allow Sub Categories. [ ]
-4. Complete fillable mass assignments in models. [ ]
-5. Add extra usefull methods in Models. [ ]
+1. [x] Add Subscriber Model and migration for newsletter subscription.
+2. [ ] Create migration schema for all migrations.
+3. [ ] Allow Sub Categories.
+4. [ ] Complete fillable mass assignments in models.
+5. [ ] Add extra usefull methods in Models.
 
 ## License
 
