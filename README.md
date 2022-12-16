@@ -49,12 +49,13 @@ My Learning project creat a blog with Lavarel 9, Jetstream and Livewire :mechani
 
 :memo: TODO LIST :memo:
 
-1. [ ]  1. Landing Page.
+1. [x]  1. Landing Page (Tailwind).
 2. [ ]  2. Category.
     - Dashboard
         - Index
         - Create
     - Routes
+    - Methods & Jobs
 
 ## License
 
