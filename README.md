@@ -33,7 +33,7 @@ My Learning project creat a blog with Lavarel 9, Jetstream and Livewire :mechani
 :memo: TODO LIST :memo:
 
 1. [x]  1. Create HomeController with View and Route.
-2. [ ]  2. Create a base layout component.
+2. [x]  2. Create a base layout component.
     - partials components
         - head
         - footer
