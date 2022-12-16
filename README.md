@@ -25,7 +25,6 @@ My Learning project creat a blog with Lavarel 9, Jetstream and Livewire :mechani
 2. [x]  2. Create migration schema for all migrations (posts, categories, subscribers).
 3. [x]  3. Allow Sub Categories.
 4. [x]  4. Complete fillable mass assignments in models.
-5. [ ]  5. Add extra usefull methods in Models.
 
 ## License
 
