@@ -50,7 +50,7 @@ My Learning project creat a blog with Lavarel 9, Jetstream and Livewire :mechani
 :memo: TODO LIST :memo:
 
 1. [x]  1. Landing Page (Tailwind).
-2. [ ]  2. Category.
+2. [x]  2. Category.
     - Dashboard
         - Index
         - Create
