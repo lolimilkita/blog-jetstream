@@ -30,6 +30,8 @@ My Learning project creat a blog with Lavarel 9, Jetstream and Livewire :mechani
 
 #### Episode 3
 
+[PR for this episode](https://github.com/lolimilkita/blog-jetstream/pull/3)
+
 :memo: TODO LIST :memo:
 
 1. [x]  1. Create HomeController with View and Route.
@@ -42,6 +44,18 @@ My Learning project creat a blog with Lavarel 9, Jetstream and Livewire :mechani
 3. [x]  3. Complete fillable mass assignments in models.
     - add meta tags for social
         - facebook
+
+#### Episode 4
+
+:memo: TODO LIST :memo:
+
+1. [x]  1. Landing Page (Tailwind).
+2. [x]  2. Category.
+    - Dashboard
+        - Index
+        - Create
+    - Routes
+    - Methods & Jobs
 
 ## License
 
