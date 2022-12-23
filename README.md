@@ -65,7 +65,7 @@ My Learning project creat a blog with Lavarel 9, Jetstream and Livewire :mechani
 
 1. [x]  1. Update dashboard route in nav.
 2. [x]  2. App layout add nav slot for categories dahsboard.
-3. [ ]  3. Create table for index view for categories.
+3. [x]  3. Create table for index view for categories.
 4. [ ]  4. "Create" view in order to create categories.
 5. [ ]  5. "Store" method in categories.
 6. [ ]  6. "Edit" view in categories.
