@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Tag;
+use App\Http\Requests\TagRequest;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class TagController extends Controller
 {
@@ -35,9 +37,16 @@ class TagController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(TagRequest $request)
     {
-        //
+        $tag = new Tag([
+            'name' => $request->name(),
+            'slug' => Str::slug($request->name())
+        ]);
+
+        $tag->save();
+
+        return redirect()->route('tags.index')->with('success', 'Tag successfully created!');
     }
 
     /**
