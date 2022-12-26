@@ -9,12 +9,12 @@ class PostController extends Controller
 {
     public function index()
     {
-        //
+        return view('dashboard.posts.index');
     }
 
     public function create()
     {
-        //
+        return view('dashboard.posts.create');
     }
 
     public function store(Request $request)
