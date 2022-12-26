@@ -14,7 +14,9 @@ class TagController extends Controller
      */
     public function index()
     {
-        //
+        return view('dashboard.tags.index', [
+            'tags' => Tag::all(),
+        ]);
     }
 
     /**
@@ -24,7 +26,7 @@ class TagController extends Controller
      */
     public function create()
     {
-        //
+        return view('dashboard.tags.create');
     }
 
     /**
