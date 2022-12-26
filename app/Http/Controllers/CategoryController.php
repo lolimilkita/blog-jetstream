@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreCategoryRequest;
 use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class CategoryController extends Controller
 {
@@ -14,7 +16,9 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        return view('dashboard.categories.index');
+        return view('dashboard.categories.index', [
+            'categories' => Category::with('subCategories')->whereNull('parent_id')->get(),
+        ]);
     }
 
     /**
@@ -33,9 +37,15 @@ class CategoryController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreCategoryRequest $request)
     {
-        //
+        $category               = new Category;
+        $category->name         = $request->name;
+        $category->parent_id    = $request->parent_id;
+        $category->slug         = Str::slug($request->name);
+        $category->save();
+
+        return redirect()->route('categories.index')->with('success', 'Category successfully created');
     }
 
     /**
