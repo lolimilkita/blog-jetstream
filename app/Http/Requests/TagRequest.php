@@ -28,6 +28,13 @@ class TagRequest extends FormRequest
         ];
     }
 
+    // public function messages()
+    // {
+    //     return [
+    //         'name.unique' => 'Tag sudah ada'
+    //     ];
+    // }
+
     public function name(): string
     {
         return $this->get('name');

@@ -80,7 +80,7 @@ My Learning project creat a blog with Lavarel 9, Jetstream and Livewire :mechani
 
 1. [x]  1. Create Tag Controller, Tag Routes.
 2. [x]  2. Create Tag views.
-3. [ ]  3. Create Tag CRUD.
+3. [x]  3. Create Tag CRUD.
 
 ## License
 
