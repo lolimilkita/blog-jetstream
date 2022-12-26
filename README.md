@@ -61,6 +61,8 @@ My Learning project creat a blog with Lavarel 9, Jetstream and Livewire :mechani
 
 #### Episode 5
 
+[PR for this episode](https://github.com/lolimilkita/blog-jetstream/pull/5)
+
 :memo: TODO LIST :memo:
 
 1. [x]  1. Update dashboard route in nav.
@@ -71,6 +73,14 @@ My Learning project creat a blog with Lavarel 9, Jetstream and Livewire :mechani
 6. [x]  6. "Edit" view in categories.
 7. [x]  7. "Update" & "Delete" method in categories controller.
 8. [x]  8. Include alerts as soon as 'Cateogry Create, Update, or Deleted' (Alpine.js).
+
+#### Episode 6
+
+:memo: TODO LIST :memo:
+
+1. [x]  1. Create Tag Controller, Tag Routes.
+2. [ ]  2. Create Tag views.
+3. [ ]  3. Create Tag CRUD.
 
 ## License
 
