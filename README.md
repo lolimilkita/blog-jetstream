@@ -47,6 +47,8 @@ My Learning project creat a blog with Lavarel 9, Jetstream and Livewire :mechani
 
 #### Episode 4
 
+[PR for this episode](https://github.com/lolimilkita/blog-jetstream/pull/4)
+
 :memo: TODO LIST :memo:
 
 1. [x]  1. Landing Page (Tailwind).
@@ -56,6 +58,19 @@ My Learning project creat a blog with Lavarel 9, Jetstream and Livewire :mechani
         - Create
     - Routes
     - Methods & Jobs
+
+#### Episode 5
+
+:memo: TODO LIST :memo:
+
+1. [x]  1. Update dashboard route in nav.
+2. [x]  2. App layout add nav slot for categories dahsboard.
+3. [x]  3. Create table for index view for categories.
+4. [x]  4. "Create" view in order to create categories.
+5. [x]  5. "Store" method in categories.
+6. [x]  6. "Edit" view in categories.
+7. [x]  7. "Update" & "Delete" method in categories controller.
+8. [x]  8. Include alerts as soon as 'Cateogry Create, Update, or Deleted' (Alpine.js).
 
 ## License
 
