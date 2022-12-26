@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class UpdateCategoryRequest extends FormRequest
+class CategoryRequest extends FormRequest
 {
     public function authorize()
     {
@@ -14,8 +14,8 @@ class UpdateCategoryRequest extends FormRequest
     public function rules()
     {
         return [
-            'name'      => ['required', 'unique:categories'],
-            'parent_id' => ['sometimes', 'nullable'],
+            'name' => ['required', 'max:200', 'unique:categories'],
+            'parent_id' => ['sometimes', 'nullable', 'numeric'],
         ];
     }
 }

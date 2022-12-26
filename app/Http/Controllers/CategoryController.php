@@ -2,9 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreCategoryRequest;
-use App\Http\Requests\UpdateCategoryRequest;
 use App\Models\Category;
+use App\Http\Requests\CategoryRequest;
 use Illuminate\Support\Str;
 
 class CategoryController extends Controller
@@ -23,7 +22,7 @@ class CategoryController extends Controller
         ]);
     }
 
-    public function store(StoreCategoryRequest $request)
+    public function store(CategoryRequest $request)
     {
         $category               = new Category;
         $category->name         = $request->name;
@@ -39,7 +38,7 @@ class CategoryController extends Controller
         return view('dashboard.categories.edit', compact('category'));
     }
 
-    public function update(UpdateCategoryRequest $request, Category $category)
+    public function update(CategoryRequest $request, Category $category)
     {
         $category->name = $request->name;
         $category->slug = Str::slug($request->name);
