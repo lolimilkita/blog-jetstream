@@ -88,8 +88,8 @@ My Learning project creat a blog with Lavarel 9, Jetstream and Livewire :mechani
 
 :memo: TODO LIST :memo:
 
-1. [ ]  1. Create Post Controller.
-2. [ ]  2. Post Routes.
+1. [x]  1. Create Post Controller.
+2. [x]  2. Post Routes.
 3. [ ]  3. Post View.
 
 ## License
