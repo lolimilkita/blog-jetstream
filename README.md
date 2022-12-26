@@ -70,7 +70,7 @@ My Learning project creat a blog with Lavarel 9, Jetstream and Livewire :mechani
 5. [x]  5. "Store" method in categories.
 6. [x]  6. "Edit" view in categories.
 7. [x]  7. "Update" & "Delete" method in categories controller.
-8. [ ]  8. Include alerts as soon as 'Cateogry Create, Update, or Deleted'.
+8. [x]  8. Include alerts as soon as 'Cateogry Create, Update, or Deleted' (Alpine.js).
 
 ## License
 
