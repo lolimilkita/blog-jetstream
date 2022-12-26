@@ -90,7 +90,7 @@ My Learning project creat a blog with Lavarel 9, Jetstream and Livewire :mechani
 
 1. [x]  1. Create Post Controller.
 2. [x]  2. Post Routes.
-3. [ ]  3. Post View.
+3. [x]  3. Post View.
 
 ## License
 
