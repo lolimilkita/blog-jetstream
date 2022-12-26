@@ -45,7 +45,7 @@
                         </div>
     
                         <x-jet-button class="mt-8">
-                            {{ __('Register') }}
+                            {{ __('Create') }}
                         </x-jet-button>
                             
                     </form>
