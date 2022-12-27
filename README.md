@@ -86,11 +86,23 @@ My Learning project creat a blog with Lavarel 9, Jetstream and Livewire :mechani
 
 #### Episode 7
 
+[PR for this episode](https://github.com/lolimilkita/blog-jetstream/pull/7)
+
 :memo: TODO LIST :memo:
 
 1. [x]  1. Create Post Controller.
 2. [x]  2. Post Routes.
 3. [x]  3. Post View.
+
+#### Episode 8
+
+:memo: TODO LIST :memo:
+
+1. [ ]  1. Create Post view.
+    - Install blade-ui-kit.
+2. [ ]  2. add Styles and Script tags.
+    - Publish vendor files.
+3. [ ]  3. create fields in view.
 
 ## License
 
