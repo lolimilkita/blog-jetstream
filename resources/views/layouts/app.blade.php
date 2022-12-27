@@ -14,7 +14,13 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
         <!-- Styles -->
+
+        {{-- Livewire --}}
         @livewireStyles
+
+        {{-- Blade Ui Kit --}}
+        @bukStyles(true)
+
     </head>
     <body class="font-sans antialiased">
         <x-jet-banner />
@@ -42,6 +48,11 @@
 
         @stack('modals')
 
+        {{-- Livewire --}}
         @livewireScripts
+
+        {{-- Blade Ui Kit --}}
+        @bukScripts(true)
+
     </body>
 </html>
