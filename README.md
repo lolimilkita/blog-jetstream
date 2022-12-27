@@ -98,8 +98,7 @@ My Learning project creat a blog with Lavarel 9, Jetstream and Livewire :mechani
 
 :memo: TODO LIST :memo:
 
-1. [ ]  1. Create Post view.
-    - Install blade-ui-kit.
+1. [x]  1. Install blade-ui-kit.
 2. [ ]  2. add Styles and Script tags.
     - Publish vendor files.
 3. [ ]  3. create fields in view.
