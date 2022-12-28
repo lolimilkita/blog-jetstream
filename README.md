@@ -122,7 +122,7 @@ My Learning project creat a blog with Lavarel 9, Jetstream and Livewire :mechani
 
 1. [x]  1. Post Request.
 2. [x]  2. Install intervention image.
-3. [ ]  3. Post store method in PostController.
+3. [x]  3. Post store method in PostController.
 4. [ ]  4. And Test.
 
 ## License

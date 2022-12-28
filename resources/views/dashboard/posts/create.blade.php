@@ -32,7 +32,7 @@
                             {{-- Cover Image --}}
                             <div>
                                 <x-jet-label for="cover_image" value="{{ __('Cover Image') }}" />
-                                <input type="file" name="cove_image" id="cover_image">
+                                <input type="file" name="cover_image" id="cover_image">
                                 <span class="mt-2 text-xs text-gray-400">File type:jpg & png only</span>
                                 <x-jet-input-error for="cover_image" class="mt-2"/>
                             </div>
@@ -72,7 +72,7 @@
                             {{-- Schedule --}}
                             <div>
                                 <x-jet-label for="published_at" value="{{ __('Published At') }}"/>
-                                <x-pikaday name="published_at" />
+                                <x-pikaday name="published_at" format="YYYY-MM-DD" />
                                 {{-- <input type="date" name="published_at" id="published_at"> --}}
                             </div>
                             
