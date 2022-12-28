@@ -32,7 +32,7 @@
                             {{-- Cover Image --}}
                             <div>
                                 <x-jet-label for="cover_image" value="{{ __('Cover Image') }}" />
-                                <input type="file" name="cove_image" id="cover_image">
+                                <input type="file" name="cover_image" id="cover_image">
                                 <span class="mt-2 text-xs text-gray-400">File type:jpg & png only</span>
                                 <x-jet-input-error for="cover_image" class="mt-2"/>
                             </div>
@@ -54,6 +54,7 @@
                                         <option value="{{ $category->id }}">{{ $category->name }}</option>
                                     @endforeach
                                 </select>
+                                <x-jet-input-error for="title" class="mt-2"/>
                             </div>
 
                             {{-- Body --}}
@@ -62,24 +63,24 @@
                                 <x-trix name="body" styling="overflow-y-scroll h-96"></x-trix>
                                 <x-jet-input-error for="body" class="mt-2"/>
                             </div>
-
+                            
+                            {{-- Tags --}}
+                            <div>
+                                <x-tags :tags="$tags" />
+                            </div>
+                            
+                            {{-- Schedule --}}
+                            <div>
+                                <x-jet-label for="published_at" value="{{ __('Published At') }}"/>
+                                <x-pikaday name="published_at" format="YYYY-MM-DD" />
+                                {{-- <input type="date" name="published_at" id="published_at"> --}}
+                            </div>
+                            
                             {{-- Meta Description --}}
                             <div>
                                 <x-jet-label for="meta_description" value="{{ __('Meta Description') }}"/>
                                 <x-trix name="meta_description" styling="overflow-y-scroll h-42"></x-trix>
                                 <x-jet-input-error for="meta_description" class="mt-2"/>
-                            </div>
-
-                            {{-- Schedule --}}
-                            <div>
-                                <x-jet-label for="published_at" value="{{ __('Published At') }}"/>
-                                <x-pikaday name="published_at" />
-                                {{-- <input type="date" name="published_at" id="published_at"> --}}
-                            </div>
-
-                            {{-- Tags --}}
-                            <div>
-                                <x-tags :tags="$tags" />
                             </div>
 
                         </div>
