@@ -96,12 +96,23 @@ My Learning project creat a blog with Lavarel 9, Jetstream and Livewire :mechani
 
 #### Episode 8
 
+[PR for this episode](https://github.com/lolimilkita/blog-jetstream/pull/8)
+
 :memo: TODO LIST :memo:
 
 1. [x]  1. Install blade-ui-kit.
 2. [x]  2. add Styles and Script tags.
     - Publish vendor files.
 3. [x]  3. create fields in view.
+
+#### Episode 9
+
+:memo: TODO LIST :memo:
+
+1. [x]  1. Create livewire component post/'index'.
+2. [x]  2. Create methods in livewire Post/index.
+3. [x]  3. Create PostSeeder & UserSeeder & CategorySeeder.
+4. [x]  4. Create livewire component post.
 
 ## License
 
