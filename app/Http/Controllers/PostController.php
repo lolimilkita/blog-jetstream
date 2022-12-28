@@ -7,6 +7,7 @@ use App\Models\Category;
 use App\Models\Post;
 use App\Models\Tag;
 use Illuminate\Support\Facades\File;
+use Intervention\Image\Facades\Image;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
@@ -24,7 +25,7 @@ class PostController extends Controller
         ]);
     }
 
-    public function store(PostRequest $request)
+    public function store(Request $request)
     {
         return $request;
     }

@@ -63,24 +63,24 @@
                                 <x-trix name="body" styling="overflow-y-scroll h-96"></x-trix>
                                 <x-jet-input-error for="body" class="mt-2"/>
                             </div>
-
-                            {{-- Meta Description --}}
+                            
+                            {{-- Tags --}}
                             <div>
-                                <x-jet-label for="meta_description" value="{{ __('Meta Description') }}"/>
-                                <x-trix name="meta_description" styling="overflow-y-scroll h-42"></x-trix>
-                                <x-jet-input-error for="meta_description" class="mt-2"/>
+                                <x-tags :tags="$tags" />
                             </div>
-
+                            
                             {{-- Schedule --}}
                             <div>
                                 <x-jet-label for="published_at" value="{{ __('Published At') }}"/>
                                 <x-pikaday name="published_at" />
                                 {{-- <input type="date" name="published_at" id="published_at"> --}}
                             </div>
-
-                            {{-- Tags --}}
+                            
+                            {{-- Meta Description --}}
                             <div>
-                                <x-tags :tags="$tags" />
+                                <x-jet-label for="meta_description" value="{{ __('Meta Description') }}"/>
+                                <x-trix name="meta_description" styling="overflow-y-scroll h-42"></x-trix>
+                                <x-jet-input-error for="meta_description" class="mt-2"/>
                             </div>
 
                         </div>
