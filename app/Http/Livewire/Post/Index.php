@@ -13,13 +13,13 @@ class Index extends Component
     public $search = '';
     public $orderBy = 'id';
     public $orderAsc = true;
-    public $perPage = 6;
+    public $perPage = 7;
 
     public function render()
     {
         return view('livewire.posts.index', [
             'posts' => Post::searchPost($this->search)
-                    ->orderBy($this->orderBy, $this->orderAsc ? 'asc' : 'dsc')
+                    ->orderBy($this->orderBy, $this->orderAsc ? 'asc' : 'desc')
                     ->paginate($this->perPage),
         ]);
     }

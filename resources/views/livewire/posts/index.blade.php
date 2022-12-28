@@ -26,7 +26,7 @@
 
             {{-- Order Asc --}}
             <div class="relative w-1/6">
-                <select wire:model='orderBy' id="" class="relative w-full px-3 py-3 pl-10 text-sm text-gray-700 placeholder-gray-400 bg-gray-100 border-none rounded shadow-inner outline-none focus:outline-none focus:shadow-outline focus:ring-0 focus:bg-indigo-100">
+                <select wire:model='orderAsc' id="" class="relative w-full px-3 py-3 pl-10 text-sm text-gray-700 placeholder-gray-400 bg-gray-100 border-none rounded shadow-inner outline-none focus:outline-none focus:shadow-outline focus:ring-0 focus:bg-indigo-100">
                     <option value="1">Asc</option>
                     <option value="0">Desc</option>
                 </select>
@@ -34,8 +34,8 @@
 
             {{-- Per Page --}}
             <div class="relative w-1/6">
-                <select wire:model='orderBy' id="" class="relative w-full px-3 py-3 pl-10 text-sm text-gray-700 placeholder-gray-400 bg-gray-100 border-none rounded shadow-inner outline-none focus:outline-none focus:shadow-outline focus:ring-0 focus:bg-indigo-50">
-                    <option value="10">10</option>
+                <select wire:model='perPage' id="" class="relative w-full px-3 py-3 pl-10 text-sm text-gray-700 placeholder-gray-400 bg-gray-100 border-none rounded shadow-inner outline-none focus:outline-none focus:shadow-outline focus:ring-0 focus:bg-indigo-50">
+                    <option value="7">7</option>
                     <option value="25">25</option>
                     <option value="50">50</option>
                     <option value="100">100</option>
@@ -121,5 +121,9 @@
             </tbody>
             
         </table>
+
+        <div class="p-2 bg-indigo-300">
+            {{ $posts->links() }}
+        </div>
     </div>
 </div>
