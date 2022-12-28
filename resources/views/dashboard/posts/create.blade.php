@@ -54,6 +54,7 @@
                                         <option value="{{ $category->id }}">{{ $category->name }}</option>
                                     @endforeach
                                 </select>
+                                <x-jet-input-error for="title" class="mt-2"/>
                             </div>
 
                             {{-- Body --}}
