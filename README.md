@@ -112,7 +112,7 @@ My Learning project creat a blog with Lavarel 9, Jetstream and Livewire :mechani
 1. [x]  1. Create livewire component post/'index'.
 2. [x]  2. Create methods in livewire Post/index.
 3. [x]  3. Create PostSeeder & UserSeeder & CategorySeeder.
-4. [ ]  4. Create livewire component post/delete.
+4. [x]  4. Create livewire component post.
 5. [ ]  5. Create livewire component "toggleButton" for "Feature Post".
 
 ## License

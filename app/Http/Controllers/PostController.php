@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Category;
 use App\Models\Post;
 use App\Models\Tag;
+use Illuminate\Support\Facades\File;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
@@ -44,6 +45,9 @@ class PostController extends Controller
 
     public function destroy(Post $post)
     {
-        //
+        File::delete(public_path('img/blob/' . $post->cover_image));
+        $post->delete();
+
+        return redirect()->route('posts.index')->with('success', 'Post successfully deleted!');
     }
 }

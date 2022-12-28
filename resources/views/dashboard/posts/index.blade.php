@@ -28,7 +28,8 @@
             <div class="overflow-hidden bg-white overflow-hidden shadow-xl sm:rounded-lg">
                 
                 {{-- LIVEWIRE TABLE --}}
-                <livewire:post.index/>
+                {{-- <livewire:post.index/> --}}
+                @livewire('post.index')
 
             </div>
         </div>
