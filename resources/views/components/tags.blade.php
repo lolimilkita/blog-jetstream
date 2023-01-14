@@ -18,7 +18,12 @@
 <x-jet-label for="tags" value="{{ __('Tags') }}"/>
 <select x-cloak id="select" class="block w-full border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
     @foreach ($tags as $tag)
-        <option value="{{ $tag->id }}">{{ $tag->name }}</option>
+        <option value="{{ $oldTags }}"
+            @if (in_array($tag->id, $oldTags))
+                selected
+            @endif
+            >{{ $tag->name }}
+        </option>
     @endforeach
 </select>
 <x-jet-input-error for="tags" class="mt-2" />

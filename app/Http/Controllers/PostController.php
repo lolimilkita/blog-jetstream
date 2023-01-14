@@ -28,7 +28,7 @@ class PostController extends Controller
 
     public function store(PostRequest $request)
     {
-        $tags                       = explode(',', $request->tags);
+        // $tags                       = explode(',', $request->tags);
         $post                       = new Post;
         $post->title                = $request->title;
         $post->slug                = Str::slug($request->title);
@@ -50,7 +50,7 @@ class PostController extends Controller
         }
 
         $post->save();
-        $post->tags()->sync($tags);
+        $post->tags()->sync($request->tags);
 
         return redirect()->route('posts.index')->with('success', 'Post created successfully!');
     }
@@ -62,7 +62,10 @@ class PostController extends Controller
 
     public function edit(Post $post)
     {
-        //
+        $tags = Tag::all();
+        $categories = Category::all();
+        $oldTags = $post->tags->pluck('id')->toArray();
+        return view('dashboard.posts.edit', compact('post', 'tags', 'categories', 'oldTags'));
     }
 
     public function update(Request $request, Post $post)

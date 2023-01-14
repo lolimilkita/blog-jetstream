@@ -8,12 +8,12 @@
     <x-slot name="nav">
         <div class="space-x-4">
             {{-- Index --}}
-            <x-jet-nav-link href="{{ route('post.index') }}" :active="request()->routeIs('post.index')">
+            <x-jet-nav-link href="{{ route('posts.index') }}" :active="request()->routeIs('posts.index')">
                 {{ __('Index') }}
             </x-jet-nav-link>
 
             {{-- Create --}}
-            <x-jet-nav-link href="{{ route('post.create') }}" :active="request()->routeIs('post.create')">
+            <x-jet-nav-link href="{{ route('posts.create') }}" :active="request()->routeIs('posts.create')">
                 {{ __('Create') }}
             </x-jet-nav-link>
         </div>
@@ -24,21 +24,77 @@
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
 
                 <div class="p-6">
-                    <form action="{{ route('post.update', $post) }}" method="POST">
-                        @csrf
-                        @method('put')
-                        <div>
-                            <x-jet-label for="name" value="{{ __('Name') }}" />
-                            <x-jet-input id="name" class="block mt-1 w-full" type="text" name="name" :value="$category->name" required autofocus autocomplete="name" />
-                            <span class="mt-2 text-xs text-gray-400">Maximum 80 characters</span>
-                            <x-jet-input-error for="name" class="mt-2"/>
+
+                    <x-form action="{{ route('posts.store') }}" has-files>
+
+                        <div class="space-y-6">
+                            
+                            {{-- Cover Image --}}
+                            <div>
+                                <x-jet-label for="cover_image" value="{{ __('Cover Image') }}" />
+                                <input type="file" name="cover_image" id="cover_image">
+                                <span class="mt-2 text-xs text-gray-400">File type:jpg & png only</span>
+                                <x-jet-input-error for="cover_image" class="mt-2"/>
+                            </div>
+                            
+                            {{-- Title --}}
+                            <div>
+                                <x-jet-label for="title" value="{{ __('Title') }}" />
+                                <x-jet-input id="title" class="block mt-1 w-full" type="text" name="title" :value="$post->title" required autofocus autocomplete="title" />
+                                <span class="mt-2 text-xs text-gray-400">Maximum 80 characters</span>
+                                <x-jet-input-error for="title" class="mt-2"/>
+                            </div>
+
+                            {{-- Category --}}
+                            <div>
+                                <x-jet-label for="category_id" value="{{ __('Categories') }}"/>
+                                <select name="category_id" id="category_id" class="block w-full border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm">
+                                    <option value="">Select a category</option>
+                                    @foreach ($categories as $category)
+                                        <option value="{{ $category->id }}"
+                                            @if ($post->category->id == $category->id)
+                                                @selected(true)
+                                            @endif
+                                            >{{ $category->name }}
+                                        </option>
+                                    @endforeach
+                                </select>
+                                <x-jet-input-error for="title" class="mt-2"/>
+                            </div>
+
+                            {{-- Body --}}
+                            <div>
+                                <x-jet-label for="body" value="{{ __('Body') }}"/>
+                                <x-trix name="body" styling="overflow-y-scroll h-96">{{ $post->body }}</x-trix>
+                                <x-jet-input-error for="body" class="mt-2"/>
+                            </div>
+                            
+                            {{-- Tags --}}
+                            <div>
+                                <x-tags :tags="$tags" :oldTags="$oldTags" />
+                            </div>
+                            
+                            {{-- Schedule --}}
+                            <div>
+                                <x-jet-label for="published_at" value="{{ __('Published At') }}"/>
+                                <x-pikaday name="published_at" format="YYYY-MM-DD" value="{{ $post->published_at }}" />
+                                {{-- <input type="date" name="published_at" id="published_at"> --}}
+                            </div>
+                            
+                            {{-- Meta Description --}}
+                            <div>
+                                <x-jet-label for="meta_description" value="{{ __('Meta Description') }}"/>
+                                <x-trix name="meta_description" styling="overflow-y-scroll h-42"></x-trix>
+                                <x-jet-input-error for="meta_description" class="mt-2"/>
+                            </div>
+
                         </div>
     
                         <x-jet-button class="mt-8">
                             {{ __('Update') }}
                         </x-jet-button>
-                            
-                    </form>
+                    </x-form>
+
                 </div>
 
             </div>
