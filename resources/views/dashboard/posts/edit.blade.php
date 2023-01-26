@@ -28,7 +28,7 @@
                     <x-form action="{{ route('posts.store') }}" has-files>
 
                         <div class="space-y-6">
-                            
+
                             {{-- Cover Image --}}
                             <div>
                                 <x-jet-label for="cover_image" value="{{ __('Cover Image') }}" />
@@ -36,7 +36,7 @@
                                 <span class="mt-2 text-xs text-gray-400">File type:jpg & png only</span>
                                 <x-jet-input-error for="cover_image" class="mt-2"/>
                             </div>
-                            
+
                             {{-- Title --}}
                             <div>
                                 <x-jet-label for="title" value="{{ __('Title') }}" />
@@ -68,19 +68,29 @@
                                 <x-trix name="body" styling="overflow-y-scroll h-96">{{ $post->body }}</x-trix>
                                 <x-jet-input-error for="body" class="mt-2"/>
                             </div>
-                            
+
                             {{-- Tags --}}
                             <div>
-                                <x-tags :tags="$tags" :oldTags="$oldTags" />
+                                {{-- <x-tags :tags="$tags" :oldTags="$oldTags" /> --}}
+                                <x-jet-label for="tags" value="{{ __('Tag') }}"/>
+                                <select name="tags[]" id="create-post" multiple x-data="{}"" x-init="function () { choices($el) }">
+                                    @foreach ($tags as $tag)
+                                        <option value="{{ $tag->id }}"
+                                            @if (in_array($tag->id, $oldTags))
+                                                selected
+                                            @endif
+                                            >{{ $tag->name }}</option>
+                                    @endforeach
+                                </select>
                             </div>
-                            
+
                             {{-- Schedule --}}
                             <div>
                                 <x-jet-label for="published_at" value="{{ __('Published At') }}"/>
                                 <x-pikaday name="published_at" format="YYYY-MM-DD" value="{{ $post->published_at }}" />
                                 {{-- <input type="date" name="published_at" id="published_at"> --}}
                             </div>
-                            
+
                             {{-- Meta Description --}}
                             <div>
                                 <x-jet-label for="meta_description" value="{{ __('Meta Description') }}"/>
@@ -89,7 +99,7 @@
                             </div>
 
                         </div>
-    
+
                         <x-jet-button class="mt-8">
                             {{ __('Update') }}
                         </x-jet-button>
