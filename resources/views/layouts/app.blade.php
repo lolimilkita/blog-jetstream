@@ -13,7 +13,8 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
-        <!-- Styles -->
+        <!-- Styles Choices JS -->
+        <link rel="stylesheet" href="{{ asset('css/choices.css') }}">
 
         {{-- Livewire --}}
         @livewireStyles

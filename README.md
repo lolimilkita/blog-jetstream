@@ -107,7 +107,7 @@ My Learning project creat a blog with Lavarel 9, Jetstream and Livewire :mechani
 
 #### Episode 9
 
-[PR for this episode](https://github.com/lolimilkita/blog-jetstream/pull/8)
+[PR for this episode](https://github.com/lolimilkita/blog-jetstream/pull/9)
 
 :memo: TODO LIST :memo:
 
@@ -118,11 +118,21 @@ My Learning project creat a blog with Lavarel 9, Jetstream and Livewire :mechani
 
 #### Episode 10
 
+[PR for this episode](https://github.com/lolimilkita/blog-jetstream/pull/10)
+
 :memo: TODO LIST :memo:
 
 1. [x]  1. Post Request.
 2. [x]  2. Install intervention image.
 3. [x]  3. Post store method in PostController.
+
+#### Episode 11
+
+:memo: TODO LIST :memo:
+
+1. [ ]  1. Edit view for Post.
+2. [ ]  2. Update Post our Controller.
+3. [ ]  3. Test!.
 
 ## License
 
