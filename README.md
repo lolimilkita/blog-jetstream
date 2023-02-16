@@ -130,9 +130,9 @@ My Learning project creat a blog with Lavarel 9, Jetstream and Livewire :mechani
 
 :memo: TODO LIST :memo:
 
-1. [ ]  1. Edit view for Post.
-2. [ ]  2. Update Post our Controller.
-3. [ ]  3. Test!.
+1. [x]  1. Edit view for Post.
+2. [x]  2. Update Post our Controller.
+3. [x]  3. Test!.
 
 ## License
 
