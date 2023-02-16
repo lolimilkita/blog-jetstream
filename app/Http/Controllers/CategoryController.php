@@ -10,7 +10,7 @@ class CategoryController extends Controller
 {
     public function index()
     {
-        return Category::with('subCategories')->whereNull('parent_id')->get();
+        // return Category::with('subCategories')->whereNull('parent_id')->get();
 
         return view('dashboard.categories.index', [
             'categories' => Category::with('subCategories')->whereNull('parent_id')->get(),

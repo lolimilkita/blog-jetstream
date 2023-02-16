@@ -25,7 +25,7 @@
 
                 <div class="p-6">
 
-                    <x-form action="{{ route('posts.store') }}" has-files>
+                    <x-form method="PUT" action="{{ route('posts.update', $post) }}" has-files>
 
                         <div class="space-y-6">
 
