@@ -128,11 +128,19 @@ My Learning project creat a blog with Lavarel 9, Jetstream and Livewire :mechani
 
 #### Episode 11
 
+[PR for this episode](https://github.com/lolimilkita/blog-jetstream/pull/11)
+
 :memo: TODO LIST :memo:
 
 1. [x]  1. Edit view for Post.
 2. [x]  2. Update Post our Controller.
 3. [x]  3. Test!.
+
+#### Episode 12
+
+:memo: TODO LIST :memo:
+
+1. [x]  1. Delete Post using livewire button.
 
 ## License
 

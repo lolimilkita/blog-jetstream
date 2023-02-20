@@ -99,12 +99,4 @@ class PostController extends Controller
 
         return redirect()->route('posts.index')->with('success', 'Post successfully update!');
     }
-
-    public function destroy(Post $post)
-    {
-        File::delete(public_path('img/blob/' . $post->cover_image));
-        $post->delete();
-
-        return redirect()->route('posts.index')->with('success', 'Post successfully deleted!');
-    }
 }
