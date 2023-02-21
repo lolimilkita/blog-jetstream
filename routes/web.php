@@ -5,6 +5,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\TagController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\BlogController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,6 +21,9 @@ use Illuminate\Support\Facades\Route;
 
 // Home Route
 Route::get('/', [HomeController::class, 'index'])->name('home');
+
+Route::get('/blog', [BlogController::class, 'index'])->name('blog');
+
 Route::group(['middleware' => ['auth'], 'prefix' => 'dashboard'], function() {
 
     // Dashboard

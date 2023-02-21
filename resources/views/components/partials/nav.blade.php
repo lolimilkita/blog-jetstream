@@ -28,6 +28,10 @@
 
       <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
         <ul class="list-reset lg:flex justify-end flex-1 items-center">
+            <li class="mr-3">
+              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="{{ route('blog') }}">Blog</a>
+            </li>
+
           @auth
             {{-- Dashboard --}}
             <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
@@ -39,10 +43,13 @@
             <li class="mr-3">
               <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="{{ route('login') }}">Login</a>
             </li>
+
             <li class="mr-3">
               <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="{{ route('register') }}">Register</a>
             </li>
           @endauth
+
+
         </ul>
 
         @auth

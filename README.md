@@ -148,9 +148,9 @@ My Learning project creat a blog with Lavarel 9, Jetstream and Livewire :mechani
 
 :memo: TODO LIST :memo:
 
-1. [ ]  1. Fix navigation bar on landing Page (JavaScript).
-2. [ ]  2. Create Blog Controller and Route.
-3. [ ]  3. Add Blog link in navigation menu.
+1. [x]  1. Fix navigation bar on landing Page (JavaScript).
+2. [x]  2. Create Blog Controller and Route.
+3. [x]  3. Add Blog link in navigation menu.
 4. [ ]  4. Create Single Post Component (Featured Posts).
 
 ## License
