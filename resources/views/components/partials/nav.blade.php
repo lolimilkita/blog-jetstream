@@ -1,6 +1,7 @@
 <nav id="header" class="fixed w-full z-30 top-0 text-white">
     <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
       <div class="pl-4 flex items-center">
+
         {{-- Logo --}}
         <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="{{ route('home') }}">
           <!--Icon from: http://www.potlabicons.com/ -->
@@ -13,8 +14,9 @@
           </svg>
           BLOG
         </a>
+
       </div>
-      
+
       <div class="block lg:hidden pr-4">
         <button id="nav-toggle" class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
           <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -42,7 +44,7 @@
             </li>
           @endauth
         </ul>
-        
+
         @auth
           <div class="ml-3 relative">
             <x-jet-dropdown align="right" width="48">
@@ -95,8 +97,8 @@
             </x-jet-dropdown>
           </div>
         @endauth
-          
+
       </div>
     </div>
     <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
-</nav>    
+</nav>
