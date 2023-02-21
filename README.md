@@ -138,9 +138,20 @@ My Learning project creat a blog with Lavarel 9, Jetstream and Livewire :mechani
 
 #### Episode 12
 
+[PR for this episode](https://github.com/lolimilkita/blog-jetstream/pull/12)
+
 :memo: TODO LIST :memo:
 
 1. [x]  1. Delete Post using livewire button.
+
+#### Episode 13
+
+:memo: TODO LIST :memo:
+
+1. [x]  1. Fix navigation bar on landing Page (JavaScript).
+2. [x]  2. Create Blog Controller and Route.
+3. [x]  3. Add Blog link in navigation menu.
+4. [x]  4. Create Single Post Component (Featured Posts).
 
 ## License
 
